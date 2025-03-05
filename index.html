@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Program | Exercise #2.0 </title>
+    <link rel="stylesheet" href="style.css">
+
+ </head> <body>
+
+    <div class="container">
+        <h2>Student Grading System</h2>
+        <table>
+            <tr>
+                <th>Category</th>
+                <th>Weight</th>
+                <th>My Score</th>
+                <th>Converted Score (%)</th>
+            </tr>
+            <tr>
+                <td>Writing Work (WW)</td>
+                <td>20%</td>
+                <td><input type="number" id="wwInput" value="87"></td>
+                <td><span id="wwScore">-</span></td>
+            </tr>
+            <tr>
+                <td>Performance Task (PT)</td>
+                <td>60%</td>
+                <td><input type="number" id="ptInput" value="94"></td>
+                <td><span id="ptScore">-</span></td>
+            </tr>
+            <tr>
+                <td>Exercise (E)</td>
+                <td>20%</td>
+                <td><input type="number" id="eInput" value="91"></td>
+                <td><span id="eScore">-</span></td>
+            </tr>
+        </table>
+        <button onclick="calculateGrade()">Calculate Final Grade</button>
+        <div class="result" id="finalGrade"></div>
+        <div class="result" id="gradeRemark"></div>
+    </div>
+
+    <!-- Sound Effects -->
+    <audio id="soundA" src="George Michael - Careless Whisper (Official Video).mp3"></audio>
+    <audio id="soundB" src="https://www.myinstants.com/media/sounds/success.mp3"></audio>
+    <audio id="soundC" src="https://www.myinstants.com/media/sounds/correct.mp3"></audio>
+    <audio id="soundD" src="https://www.myinstants.com/media/sounds/error.mp3"></audio>
+    <audio id="soundF" src="https://www.myinstants.com/media/sounds/fail.mp3"></audio>
+
+    <script src="main.js"></script>
+    
+ </body> </html>
